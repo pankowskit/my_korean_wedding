@@ -1,6 +1,11 @@
+import Blog from "./views/blog";
 import Comingsoon from "./views/comingsoon";
+import Contact from "./views/contact";
 import Error from "./views/error";
+import Home from "./views/home";
+import Magazine from "./views/magazine";
 import Privacy from "./views/privacy";
+import Weddings from "./views/weddings";
 
 const ERRORS = {
     "401":{
@@ -18,7 +23,12 @@ const ERRORS = {
 }
 
 const PATHS = [
-    {menuItem:false,menuName:"",path:"/",component:<Comingsoon/>},
+    {menuItem:true,menuName:"Home",path:"/",component:<Home/>},
+    {menuItem:true,menuName:"Magazine",path:"/magazine",component:<Magazine/>},
+    {menuItem:true,menuName:"Weddings",path:"/weddings",component:<Weddings/>},
+    {menuItem:true,menuName:"Blog",path:"/blog",component:<Blog/>},
+    {menuItem:true,menuName:"Contact",path:"/contact",component:<Contact/>},
+    {menuItem:false,menuName:"",path:"/comingsoon",component:<Comingsoon/>},
     {menuItem:false,menuName:"",path:"/privacy",component:<Privacy/>},
     {menuItem:false,menuName:"",path:"*",component:<Error errorData={ERRORS['404']}/>}
 ];
