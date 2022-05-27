@@ -10,7 +10,7 @@ class IndexS1 extends Component{
                 <Row className="mx-0 w-100 mt-5">
                     <Col xs={12} md={7} className="minh-25vh d-none d-md-block"></Col>
                     <Col xs={12} md={5} className="minh-50vh d-flex align-items-center">
-                        <div className="w-100 text-center text-md-start">
+                        <div className="w-100 text-center text-md-start text-shadow">
                             <h5 className="text-white">
                                 Lorem ipsum
                             </h5>

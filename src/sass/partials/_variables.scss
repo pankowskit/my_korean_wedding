@@ -1,13 +1,42 @@
-$prefix: "../img/";
-$footer__height: 53px;
-$img__comingsoon: $prefix+"comingsoon.jpg"; 
-$img__error: $prefix+"error.jpg"; 
-$img__privacy: $prefix+"privacy.jpg"; 
+$prefix: "../../img/";
+$bg__blog-img: 
+    $prefix+"blog/blog-s1.jpg",
+    "",
+    $prefix+"blog/blog-s3.jpg";
+$bg__coming-img: $prefix+"comingsoon.jpg"; 
+$bg__contact-img: 
+    $prefix+"contact/contact-s1.jpg",
+    $prefix+"contact/contact-s2.jpg";
+$bg__error-img: $prefix+"error.jpg"; 
+$bg__index-img: $prefix+"index/index-s1.jpg";
+$bg__magazine-img: 
+    $prefix+"magazine/magazine-s1.jpg",
+    $prefix+"magazine/magazine-s2.jpg",
+    $prefix+"magazine/magazine-s3.jpg";
+$bg__privacy-img: $prefix+"privacy.jpg";
+$bg__weddings-img: 
+    $prefix+"weddings/weddings-s1.jpg",
+    $prefix+"weddings/weddings-s2.jpg",
+    $prefix+"weddings/weddings-s3.jpg",
+    $prefix+"weddings/weddings-s4.jpg";
 $section__classes:
+    "blog",
     "comingsoon",
+    "contact",
     "error",
-    "privacy";
+    "index",
+    "magazine",
+    "privacy",
+    "weddings";
 $section__images:
-    $img__comingsoon,
-    $img__error,
-    $img__privacy;
+    $bg__blog-img,
+    $bg__coming-img,
+    $bg__contact-img,
+    $bg__error-img,
+    $bg__index-img,
+    $bg__magazine-img,
+    $bg__privacy-img,
+    $bg__weddings-img;
+$color__shadow: #333;
+$footer__height: 41px;
+$text-shadow: 1px 1px 3px $color__shadow; 
